@@ -18,14 +18,17 @@ relay = LED(17)
 mycursor = mydb.cursor()
 
 while True:
-    mycursor.execute("select * from radpostauth where reply = 'Access-Accept' and authdate > (now() - 3);")
+
+    mycursor.execute("select * from radpostauth where (reply = 'Access-Accept') and (TIMESTAMPDIFF(SECOND, now(), `authdate`) > -3);")
     myresult = mycursor.fetchall()
+    mydb.commit()
 
     if len(myresult) > 0:
+         print(len(myresult))
          for x in myresult:
               print(x)
          relay.on()
          sleep(5)
          relay.off()
 
-    sleep(3)
+    sleep(2)
