@@ -17,11 +17,11 @@ https://pimylifeup.com/raspberry-pi-mysql/
 
 https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 
-# Install freeradius
+# Install freeradius and daloradius
 
 https://computingforgeeks.com/install-freeradius-and-daloradius-on-debian/
-(missing package php7.3-mysql)
 
+## Note
 /etc/freeradius/3.0/mods-enabled/eap -> uncomment "pwd" section
 
 Run debug freeradius
@@ -30,6 +30,17 @@ service freeradius stop
 freeradius -X
 ```
 
+## Install missing packages
+
+https://stackoverflow.com/questions/26330311/daloradius-is-not-working-db-php-file-not-found
+https://stackoverflow.com/questions/4560996/call-to-undefined-function-imagecreatetruecolor-error-in-php-pchart
+
+```
+apt-get install php-mysql php-db php-gd
+```
+
+
+
 
 https://raspberrypi.stackexchange.com/questions/31663/problem-wpa-supplicant-rapsberry-pi-2/89831
 
@@ -37,9 +48,7 @@ https://raspberrypi.stackexchange.com/questions/31663/problem-wpa-supplicant-rap
 
 http://www.binaryheartbeat.net/2013/12/raspberry-pi-based-freeradius-server.html
 
-https://stackoverflow.com/questions/26330311/daloradius-is-not-working-db-php-file-not-found
 
-https://stackoverflow.com/questions/4560996/call-to-undefined-function-imagecreatetruecolor-error-in-php-pchart
 
 http://wiki.laptop.org/images/d/d7/Hostapd.conf
 
