@@ -1,23 +1,26 @@
 # unlockme
 
-# Config access point mode for wlan0
+# 1. Configure access point mode for wlan0
 
-## WPA2-Personal
+## 1.1. Configure networking
+
+
+## 1.2. WPA2-Personal
 https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md
 
-## WPA2-Enterprise (EAP-PWD)
+## 1.3. WPA2-Enterprise (EAP-PWD)
 
 https://raspiblog.noblogs.org/post/2019/09/02/wpa2-enterprise-access-point-with-hostapd-and-freeradius/
 
-# Install MySQL
+# 2. Install MySQL
 
 https://pimylifeup.com/raspberry-pi-mysql/
 
-# Install web server with PHP 7.3
+# 3. Install web server with PHP 7.3
 
 https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 
-# Install freeradius and daloradius
+# 4. Install freeradius and daloradius
 
 https://computingforgeeks.com/install-freeradius-and-daloradius-on-debian/
 
@@ -39,7 +42,14 @@ https://stackoverflow.com/questions/4560996/call-to-undefined-function-imagecrea
 apt-get install php-mysql php-db php-gd
 ```
 
+# Run python script
 
+```
+apt-get install python3-pip python3-dev python3-rpi.gpio
+pip3 install gpiozero mysql.connector
+```
+
+https://raspberrypi.stackexchange.com/questions/60774/importerror-no-module-named-rpi
 
 
 https://raspberrypi.stackexchange.com/questions/31663/problem-wpa-supplicant-rapsberry-pi-2/89831
