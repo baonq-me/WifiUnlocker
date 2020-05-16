@@ -1,4 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
+# pip3 install gpiozero mysql.connector
 
 from gpiozero import LED
 import mysql.connector
