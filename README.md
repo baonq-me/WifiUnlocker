@@ -118,11 +118,11 @@ Install Linux ... oh no, we already have it :D
 
 # 4. Install freeradius and daloradius
 
-Install freeradius by following this link
+Install `freeradius` and `daloradius` by following this link. Remember to add an defaut RADIUS user by `daloradius`.
 
 https://computingforgeeks.com/install-freeradius-and-daloradius-on-debian/
 
-Enable EAP-PWD mode for freeradius by open file `/etc/freeradius/3.0/mods-enabled/eap` and uncomment `pwd` section inside `eap` section.
+Enable `EAP-PWD` mode for `freeradius` by open file `/etc/freeradius/3.0/mods-enabled/eap` and uncomment `pwd` section inside `eap` section.
 
 ```
 pwd {
@@ -156,7 +156,7 @@ apt-get install python3-pip python3-dev python3-rpi.gpio
 pip3 install gpiozero mysql.connector
 ```
 
-Run file `unlockme.py` then connect to wifi network `UnlockMe`. Debug log for `hostapd` is in syslog. Run `freeradius -X` to see debugging log in `stdout`.
+Run file `unlockme.py` then connect to wifi network `UnlockMe` using user in `Step 4`. Debug log for `hostapd` is in syslog. Run `freeradius -X` to see debugging log in `stdout`.
 
 
 # 6. References
