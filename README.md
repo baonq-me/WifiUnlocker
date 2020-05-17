@@ -156,7 +156,7 @@ apt-get install python3-pip python3-dev python3-rpi.gpio
 pip3 install gpiozero mysql.connector
 ```
 
-Run file `unlockme.py` then connect to wifi network `UnlockMe` using user in `Step 4`. Debug log for `hostapd` is in syslog. Run `freeradius -X` to see debugging log in `stdout`.
+Run file `wifiunlocker.py` then connect to wifi network `WifiUnlocker` using user in `Step 4`. Debug log for `hostapd` is in syslog. Run `freeradius -X` to see debugging log in `stdout`.
 
 
 # 6. References
