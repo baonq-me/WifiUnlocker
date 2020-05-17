@@ -1,4 +1,4 @@
-# UnlockMe
+# WifiUnlocker
 
 # 1. Configure network
 
