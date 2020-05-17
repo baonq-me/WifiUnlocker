@@ -30,7 +30,7 @@ while True:
          for x in myresult:
               print(x)
          relay.on()
-         sleep(5)
+         sleep(15)
          relay.off()
 
     sleep(2)
