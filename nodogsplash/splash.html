@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>WifiUnlocker - $uptime</title>
+<script type="text/javascript">
+function openGate() {
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+           if (xmlhttp.status == 200) {
+               //document.getElementById("result").innerHTML = xmlhttp.responseText;
+           }
+           else if (xmlhttp.status == 400) {
+              
+           }
+           else {
+               
+           }
+        }
+    };
+
+    xmlhttp.open("GET", "http://192.168.4.1:8080/wifiunlocker/open", true);
+    xmlhttp.send();
+}
+</script>
+<style>
+body {
+    background-image: url("sib.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    text-align: center;     
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  height: 150px;
+  width: 200px;
+  font-size: 50px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <button onclick="openGate()">Open</button>
+</div>
+</body>
+</html>
